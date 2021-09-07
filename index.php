@@ -2,30 +2,241 @@
 
 <?php get_template_part('template-parts/header-section');?>
 
-	<main class="page"> 
-
-			<!-- Вывод записей конкретной таксономии по id -->
-				<?
-					$args = array(
-						'posts_per_page' => 4,
-						'post_type' => 'ultra',
-						'tax_query' => array(
-							array(
-								'taxonomy' => 'ultracat',
-								'field' => 'id',
-								'terms' => array(7)
-							)
-						)
-					);
-					$query = new WP_Query($args);
-
-					foreach( $query->posts as $post ){
-						$query->the_post();
-						get_template_part('template-parts/product-elem');
-					}  
-					wp_reset_postdata();
-				?>
-
-	</main>
+<main role="main">
+	<div class="intro">
+		<div class="container">
+			<img src="<?php echo get_template_directory_uri();?>/img/man.png" alt class="intro-image">
+			<div class="intro-caption">
+				<h1 class="intro-title">Внедрение <br>битрикс<span>24</span></h1>
+				<p class="intro-lead-text">Управляйте компание легко</p>
+				<p class="intro-text">Все в одном: CRM, Корпоративный портал, <br> управление проектами и командами</p>
+				<a href="#" class="btn btn--dark intro-btn">Получить консультацию</a>
+			</div>
+		</div>
+	</div>
+	<section class="sn about">
+		<div class="container">
+			<div class="sn__head">
+				<h2 class="sn__title">О компании</h2>
+			</div>
+			<div class="about__inner">
+				<p>Компания  "Диджитал-Эверест" занимается внедрением CRM Битрикс24, разработкой и внедрением собственных приложений для CRM-систем, а также программным для мобильных устроиств.</p>
+				<p>У нас молодой творческий коллектив единомышленников, открытый для активных и целеустремленных людей, которые стремятся покорять новые вершины! Наша цель сделать Ваш бизнес эффективнее! </p>
+			</div>
+		</div>
+	</section>
+	<section class="sn work">
+		<div class="container">
+			<div class="sn__head">
+				<h2 class="sn__title">Как мы работаем</h2>
+			</div>
+			<div class="work__inner">
+				<div class="work__col">
+					<div class="work-card">
+						<div class="work-card__num"><span>1</span></div>
+						<div class="work-card__icon"><svg width="114" height="75"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#work-icon-01"/></svg></div>
+						<div class="work-card__title">Аналитика</div>
+					</div>
+				</div>
+				<div class="work__col">
+					<div class="work-card">
+						<div class="work-card__num"><span>2</span></div>
+						<div class="work-card__icon"><svg width="114" height="75"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#work-icon-02"/></svg></div>
+						<div class="work-card__title">Настройка</div>
+					</div>
+				</div>
+				<div class="work__col">
+					<div class="work-card">
+						<div class="work-card__num"><span>3</span></div>
+						<div class="work-card__icon"><svg width="114" height="75"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#work-icon-03"/></svg></div>
+						<div class="work-card__title">Обучение</div>
+					</div>
+				</div>
+				<div class="work__col">
+					<div class="work-card">
+						<div class="work-card__num"><span>4</span></div>
+						<div class="work-card__icon"><svg width="114" height="75"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#work-icon-04"/></svg></div>
+						<div class="work-card__title">Сопровождение</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sn services">
+		<div class="container">
+			<div class="sn__head">
+				<h2 class="sn__title">Наши услуги</h2>
+			</div>
+		</div>
+		<div class="services__inner">
+			<div class="cards-grid">
+				<a href="services-01.html" class="card">
+					<div class="card__icon">
+						<svg width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#card-icon-01"/></svg>
+					</div>
+					<div class="card__body">
+						<div class="card__title">Интеграция Битрикс24 со стороними сервисами</div>
+						<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#more-icon"/></svg></div>
+					</div>
+				</a>
+				<a href="services-02.html" class="card">
+					<div class="card__icon">
+						<svg width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#card-icon-02"/></svg>
+					</div>
+					<div class="card__body">
+						<div class="card__title">Настройка Битрикс24 Базовый функционал</div>
+						<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#more-icon"/></svg></div>
+					</div>
+				</a>
+				<a href="services-03.html" class="card">
+					<div class="card__icon">
+						<svg width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#card-icon-03"/></svg>
+					</div>
+					<div class="card__body">
+						<div class="card__title">Тех.поддержка</div>
+						<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#more-icon"/></svg></div>
+					</div>
+				</a>
+				<a href="services-04.html" class="card">
+					<div class="card__icon">
+						<svg width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#card-icon-04"/></svg>
+					</div>
+					<div class="card__body">
+						<div class="card__title">Доработка Битрикс24</div>
+						<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#more-icon"/></svg></div>
+					</div>
+				</a>
+				<a href="services-05.html" class="card">
+					<div class="card__icon">
+						<svg width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#card-icon-05"/></svg>
+					</div>
+					<div class="card__body">
+						<div class="card__title">Обучение</div>
+						<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#more-icon"/></svg></div>
+					</div>
+				</a>
+				<a href="services-06.html" class="card">
+					<div class="card__icon">
+						<svg width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#card-icon-10"/></svg>
+					</div>
+					<div class="card__body">
+						<div class="card__title">Автоматизация бизнес-процессов</div>
+						<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#more-icon"/></svg></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="sn faq">
+		<div class="container">
+			<div class="faq__wrap">
+				<div class="faq__head sn__head">
+					<h2 class="sn__title">Часто задаваемые вопросы</h2>
+					<div class="sn__sub-title">Не нашли ответ на свой вопрос? <a href="#">Оставьте заявку</a> и наш специалист свяжется  и ответит на ваш вопрос</div>
+				</div>
+				<div class="faq__inner">
+					<div class="accordion-group">
+						<section class="accordion-group__accordion accordion-group__accordion_expanded">
+							<header class="accordion-group__accordion-head">
+								<h3 class="accordion-group__accordion-heading">
+									<button type="button" class="accordion-group__accordion-btn">Где почитать отзывы о вас?</button>
+								</h3>
+							</header>
+							<div class="accordion-group__accordion-panel">
+								<div class="accordion-group__accordion-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+										ex ea commodo consequat. Duis aute
+										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+									sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</section>
+						<section class="accordion-group__accordion">
+							<header class="accordion-group__accordion-head">
+								<h3 class="accordion-group__accordion-heading">
+									<button type="button" class="accordion-group__accordion-btn">Где я могу получить еще больше информации?</button>
+								</h3>
+							</header>
+							<div class="accordion-group__accordion-panel">
+								<div class="accordion-group__accordion-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+										ex ea commodo consequat. Duis aute
+										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+									sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</section>
+						<section class="accordion-group__accordion">
+							<header class="accordion-group__accordion-head">
+								<h3 class="accordion-group__accordion-heading">
+									<button type="button" class="accordion-group__accordion-btn">Я живу в московской области, сможете приехать?</button>
+								</h3>
+							</header>
+							<div class="accordion-group__accordion-panel">
+								<div class="accordion-group__accordion-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+										ex ea commodo consequat. Duis aute
+										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+									sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</section>
+						<section class="accordion-group__accordion">
+							<header class="accordion-group__accordion-head">
+								<h3 class="accordion-group__accordion-heading">
+									<button type="button" class="accordion-group__accordion-btn">Как производится контроль качества?</button>
+								</h3>
+							</header>
+							<div class="accordion-group__accordion-panel">
+								<div class="accordion-group__accordion-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+										ex ea commodo consequat. Duis aute
+										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+									sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sn feedback">
+		<div class="container">
+			<div class="feedback__inner">
+				<div class="feedback__head">
+					<div class="feedback__title">Остались вопросы?</div>
+					<div class="feedback__sub-title">Свяжитесь с нами, мы ответим на все интересующие Вас вопросы</div>
+				</div>
+				<form action class="feedback-form">
+					<div class="feedback-form__group">
+						<div class="feedback-form__part">
+							<label class="field-text">
+								<span class="field-text__input-wrap">
+									<input class="field-text__input" type="text" placeholder="Номер телефона" id name>
+								</span>
+							</label>
+						</div>
+						<div class="feedback-form__part">
+							<button type="submit" class="btn btn--main feedback-form__btn">Заказать звонок</button>
+						</div>
+					</div>
+					<div class="feedback-form__part">
+						<div class="field-checkbox">
+							<label class="field-checkbox__name">
+								<input class="field-checkbox__input" type="checkbox" id name checked>
+								<span class="field-checkbox__name-text">Я согласен на отправку персональных данных</span>
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
 
 <?php get_footer(); ?> 
