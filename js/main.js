@@ -235,8 +235,8 @@ $('.newButton').click(function (e) {
 		);
 
 		jqXHR.done(function (responce) {
-			jQuery(".headen_form_blk").hide();
-			jQuery('.SendetMsg').show();
+			jQuery(".popup__form-block .headen_form_blk").hide();
+			jQuery('.popup__form-block .SendetMsg').show();
 		});
 
 		jqXHR.fail(function (responce) {
@@ -246,3 +246,40 @@ $('.newButton').click(function (e) {
 	}
 });
 
+
+$('.questbutton').click(function (e) {
+
+	e.preventDefault();
+	const tel = $("#form-quest-tel").val();
+
+	if (jQuery("#form-quest-tel").val() == "") {
+		jQuery("#form-quest-tel").css("border", "1px solid red");
+		return;
+	}
+
+	// if (jQuery("#sig-inp-e").val() == ""){
+	// 	jQuery("#sig-inp-e").css("border","1px solid red");
+	// 	return;
+	// }
+
+	else {
+		var jqXHR = jQuery.post(
+			allAjax.ajaxurl,
+			{
+				action: 'sendquest',
+				nonce: allAjax.nonce,
+				tel: tel,
+			}
+		);
+
+		jqXHR.done(function (responce) {
+			jQuery(".feedback-form .headen_form_blk").hide();
+			jQuery('.feedback-form .SendetMsg').show();
+		});
+
+		jqXHR.fail(function (responce) {
+			alert("Произошла ошибка. Попробуйте позднее.");
+		});
+
+	}
+});

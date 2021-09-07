@@ -224,12 +224,17 @@
 																<div class="feedback-form__part">
 																	<label class="field-text">
 																		<span class="field-text__input-wrap">
-																			<input type="tel" name="tel" placeholder="Номер телефона" class="field-text__input" id>
+																			<div class="headen_form_blk">
+																				<input type="tel" id="form-quest-tel" name="tel" placeholder="Номер телефона" class="field-text__input">
+																			</div>
+																			<div class="SendetMsg" style="display:none;">
+																				<input type="tel" name="tel" placeholder="Сообщение отправлено" class="field-text__input" disabled>
+																			</div>
 																		</span>
 																	</label>
 																</div>
 																<div class="feedback-form__part">
-																	<button type="submit" class="btn btn--main feedback-form__btn">Заказать звонок</button>
+																	<button type="submit" class="btn btn--main questbutton feedback-form__btn">Заказать звонок</button>
 																</div>
 															</div>
 															<div class="feedback-form__part">

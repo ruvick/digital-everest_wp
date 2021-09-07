@@ -1,6 +1,6 @@
 <?php
 
-define("COMPANY_NAME", "АВТОМОБИЛЬНЫЕ СИДЕНЬЯ");
+define("COMPANY_NAME", "DIGITAL-EVEREST");
 define("MAIL_RESEND", "noreply@ultrakresla.ru");
 
 //----Подключене carbon fields
@@ -19,7 +19,7 @@ function crb_attach_theme_options()
 add_action('after_setup_theme', 'crb_load');
 function crb_load()
 {
-	require_once('carbon-fields/vendor/autoload.php');
+	require_once('carbon-fields/vendor/autoload.php'); 
 	\Carbon_Fields\Carbon_Fields::boot();
 }
 
@@ -394,7 +394,33 @@ function sendphone()
 		);
 
 		add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
-		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заказ звонка', '<strong>Имя:</strong> ' . $_REQUEST["name"] . ' <br/> <strong>Телефон:</strong> ' . $_REQUEST["tel"], $headers))
+		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заказ звонка', '<strong>Имя:</strong> ' . $_REQUEST["name"] . ' <br/> <strong>Телефон:</strong> ' . $_REQUEST["tel"] . ' <br/> <strong>Email:</strong> ' . $_REQUEST["email"], $headers))
+			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
+		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
+	} else {
+		wp_die('НО-НО-НО!', '', 403);
+	}
+}
+
+
+add_action('wp_ajax_sendquest', 'sendquest');
+add_action('wp_ajax_nopriv_sendquest', 'sendquest');
+
+function sendquest()
+{
+	if (empty($_REQUEST['nonce'])) {
+		wp_die('0');
+	}
+
+	if (check_ajax_referer('NEHERTUTLAZIT', 'nonce', false)) {
+
+		$headers = array(
+			'From: Сайт ' . COMPANY_NAME . ' <' . MAIL_RESEND . '>',
+			'content-type: text/html',
+		);
+
+		add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
+		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заказ звонка', '<strong>Телефон:</strong> ' . $_REQUEST["tel"], $headers))
 			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
 		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
 	} else {
