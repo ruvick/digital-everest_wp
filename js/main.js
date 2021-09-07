@@ -1,128 +1,42 @@
-// Файлы Java Script -----------------------------------------------------------------------------------------------------
 
-// возвращает куки с указанным name,
-// или undefined, если ничего не найдено
-function getCookie(name) {
-	let matches = document.cookie.match(new RegExp(
-		"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-	));
-	return matches ? decodeURIComponent(matches[1]) : undefined;
+const iconMenu = document.querySelector(".burger");
+const body = document.querySelector("body");
+const menuBody = document.querySelector(".mob-menu");
+const menuListItemElems = document.querySelector(".mob-menu__list");
+const mobsearch = document.querySelector(".mob-search");
+const headsearch = document.querySelector(".header__search");
+
+//BURGER
+if (iconMenu) {
+	iconMenu.addEventListener("click", function () {
+		iconMenu.classList.toggle("active");
+		body.classList.toggle("lock");
+		menuBody.classList.toggle("active");
+	});
 }
 
 
-function number_format() {
-	let elements = document.querySelectorAll('.price_formator');
-	for (let elem of elements) {
-		elem.dataset.realPrice = elem.innerHTML;
-		elem.innerHTML = Number(elem.innerHTML).toLocaleString('ru-RU');
-	}
+// Закрытие моб меню при клике на якорную ссылку
+if (menuListItemElems) {
+	menuListItemElems.addEventListener("click", function () {
+		iconMenu.classList.toggle("active");
+		body.classList.toggle("lock");
+		menuBody.classList.toggle("active");
+	});
 }
 
-function set_size(sizeName) {
-	let btn = document.getElementById('btn__to-card');
-	btn.dataset.size = sizeName;
-	console.log(sizeName);
-}
 
-document.addEventListener("DOMContentLoaded", () => {
-	number_format();
-	cart_recalc();
-});
+// Закрытие моб меню при клике вне области меню 
+// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+// 	const target = e.target // находим элемент, на котором был клик
+// 	if (!target.closest('.icon-menu') && !target.closest('.mob-menu') && !target.closest('.mob-search') && !target.closest('.header__search') && !target.closest('._popup-link') && !target.closest('.popup')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+// 		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
+// 		menuBody.classList.remove('active')
+// 		body.classList.remove('lock')
+// 		headsearch.classList.remove('active')
+// 	}
+// })
 
-//--- Корзина -------------------------------------------------------------------------------------------------------------
-
-let cart = [];
-let cartCount = 0;
-
-function cart_recalc() {
-	cart = JSON.parse(localStorage.getItem("cart"));
-	if (cart == null) cart = [];
-	cartCount = 0;
-	cartSumm = 0;
-	for (let i = 0; i < cart.length; i++) {
-		cartCount += Number(cart[i].count);
-
-		cartSumm += Number(cart[i].count) * parseFloat(cart[i].price);
-	}
-
-	localStorage.setItem("cartcount", cartCount);
-	localStorage.setItem("cartsumm", cartSumm);
-
-	let elements = document.querySelectorAll('.bascet_counter');
-	for (let elem of elements) {
-		elem.innerHTML = cartCount;
-	}
-
-}
-
-function add_tocart(elem, countElem) {
-
-
-	let cartElem = {
-		sku: elem.dataset.sku,
-		size: elem.dataset.size,
-		lnk: elem.dataset.lnk,
-		price: elem.dataset.price,
-		priceold: elem.dataset.oldprice,
-		subtotal: elem.dataset.price,
-		name: elem.dataset.name,
-		count: (countElem == 0) ? elem.dataset.count : countElem,
-		picture: elem.dataset.picture
-	};
-
-	if (cart.length == 0) {
-		cart.push(cartElem);
-	} else {
-		let addet = true;
-		for (let i = 0; i < cart.length; i++) {
-			if ((cart[i].sku == cartElem.sku) && (cart[i].size == cartElem.size)) {
-				cart[i].count++;
-				cart[i].subtotal = Number(cart[i].count) * parseFloat(cart[i].price);
-				addet = false;
-				break;
-			}
-		}
-
-		if (addet)
-			cart.push(cartElem);
-	}
-
-	localStorage.setItem("cart", JSON.stringify(cart));
-	cart_recalc();
-
-	console.log(cartElem);
-}
-//------------------------------------------------------------------------------------------------------------
-
-// Отправка на печать -------------------------------------------------------------------------------------------------------------
-function printit() {
-	if (window.print) {
-		window.print();
-	} else {
-		var WebBrowser =
-			'<OBJECT ID="WebBrowser1" WIDTH=0 HEIGHT=0 CLASSID="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2"></OBJECT>';
-		document.body.insertAdjacentHTML("beforeEnd", WebBrowser);
-		WebBrowser1.ExecWB(6, 2); //Use a 1 vs. a 2 for a prompting dialog box WebBrowser1.outerHTML = "";
-	}
-}
-
-// Отправка на генерацию PDF -------------------------------------------------------------------------------------------------------------
-function generatePDF() {
-	const element = document.getElementById('body');
-	const opt = {
-		margin: 1,
-		filename: 'file.pdf',
-		image: { type: 'jpeg', quality: 0.98 },
-		html2canvas: { scale: 1 },
-		jsPDF: { unit: 'in', format: 'a2', orientation: 'portrait' }
-	};
-
-	// New Promise-based usage:
-	html2pdf().set(opt).from(element).save();
-}
-
-{/* <a href="#" class="card-wrap-properties-links-link" onclick="generatePDF();">Скачать страницу в PDF</p></a> */ }
-// ----------------------------------------------------------------------------------------------------------------------------------------
 
 //BodyLock для Popup на JS
 function body_lock(delay) {
@@ -254,6 +168,27 @@ document.addEventListener('keydown', function (e) {
 $ = jQuery;
 
 // Файлы jQuery---------------------------------------------------------------------------------------------------------------
+
+// // Slider на главной
+$('.slider-intro-caption').slick({
+	arrows: false,
+	dots: true,
+	infinite: true,
+	speed: 2000,
+	slidesToShow: 1,
+	autoplay: true,
+	autoplaySpeed: 1800,
+	adaptiveHeight: true,
+		responsive: [
+		{
+			breakpoint: 770,
+			settings: {
+				dots: false,
+			}
+		}
+	]
+});
+
 
 // Маска телефона
 var inputmask_phone = { "mask": "+9(999)999-99-99" };
