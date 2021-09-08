@@ -15,27 +15,29 @@
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/header-section');?>
+<?php get_template_part('template-parts/header-section');?> 
 
-	<main id="primary" class="page site-main"> 
-
-		<section class="content"> 
-			<div class="container">
-
-			<?php
-			if ( function_exists('yoast_breadcrumb') ) {
-				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-			}
-			?> 
+<main role="main">
+	<ul class="breadcrumbs">
+		<div class="container">
+			<li class="breadcrumbs__item"><a href class="breadcrumbs__link">Главная</a></li>
+			<li class="breadcrumbs__item">Политика конфиденциальности</li>
+		</div>
+	</ul> 
+	<section class="content"> 
+		<div class="container">
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<h1><?php the_title();?></h1>
-					<?php the_content();?>
-					<?php endwhile;?>
-				<?php endif; ?> 
+				<?php the_content();?>
+			<?php endwhile;?>
+		<?php endif; ?> 
 
-			</div>
-		</section>
-	</main>
+	</div>
+</section>
+
+<?php get_template_part('template-parts/feedback-section');?>
+
+</main>
 
 <?php get_footer();
