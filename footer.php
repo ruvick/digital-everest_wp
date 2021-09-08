@@ -32,7 +32,7 @@
         <p class="page-footer__copyright">©2021 «Digital Everest» | Разработано  - www</p>
         <p class="page-footer__links-group">
           <a href="#">Пользовательское соглашение</a>
-          <a href="#">Политика конфиденциальности</a>
+          <a href="<?php echo get_permalink(5);?>">Политика конфиденциальности</a>
         </p>
       </div>
     </div>

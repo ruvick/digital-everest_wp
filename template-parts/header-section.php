@@ -2,7 +2,7 @@
   <div class="container">
     <div class="page-header__inner">
       <nav id="main-nav" class="main-nav" role="navigation">
-        <a href="index.html" class="logo"><img src="<?php echo get_template_directory_uri();?>/img/logo-light.svg" alt></a>
+        <a href="http://digital-everest.ruvick.site" class="logo"><img src="<?php echo get_template_directory_uri();?>/img/logo-light.svg" alt></a>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a href="#" class="main-nav__link">
