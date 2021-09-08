@@ -78,7 +78,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="sn services">
+					<section id="services" class="sn services">
 						<div class="container">
 							<div class="sn__head">
 								<h2 class="sn__title">Наши услуги</h2>

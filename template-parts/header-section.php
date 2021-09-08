@@ -10,7 +10,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="proektnoe.html" class="main-nav__link">
+            <a href="#services" class="main-nav__link"> 
               Услуги
             </a>
           </li>
@@ -32,7 +32,7 @@
 <nav class="mob-menu">
   <ul class="mob-menu__list">
     <li><a href="numbers.html" class="menu__link">Главная</a></li>
-    <li><a href="restaurant.html" class="menu__link">Услуги</a></li>
+    <li><a href="#services" class="menu__link">Услуги</a></li>
     <li><a href="contacts.html" class="menu__link">Контакты</a></li>
   </ul>
 </nav>

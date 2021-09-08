@@ -16,10 +16,10 @@ if (iconMenu) {
 }
 
 
-// Закрытие моб меню при клике на якорную ссылку
+// Закрытие моб меню при клике на якорную ссылку 
 if (menuListItemElems) {
 	menuListItemElems.addEventListener("click", function () {
-		iconMenu.classList.toggle("active");
+		iconMenu.classList.toggle("burger--close");
 		body.classList.toggle("lock");
 		menuBody.classList.toggle("active");
 	});
@@ -27,15 +27,33 @@ if (menuListItemElems) {
 
 
 // Закрытие моб меню при клике вне области меню 
-// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-// 	const target = e.target // находим элемент, на котором был клик
-// 	if (!target.closest('.icon-menu') && !target.closest('.mob-menu') && !target.closest('.mob-search') && !target.closest('.header__search') && !target.closest('._popup-link') && !target.closest('.popup')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-// 		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
-// 		menuBody.classList.remove('active')
-// 		body.classList.remove('lock')
-// 		headsearch.classList.remove('active')
-// 	}
-// })
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	const target = e.target // находим элемент, на котором был клик
+	if (!target.closest('.burger') && !target.closest('.mob-menu') && !target.closest('.mob-search') && !target.closest('.header__search') && !target.closest('._popup-link') && !target.closest('.popup')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+		iconMenu.classList.remove('burger--close') // то закрываем окно навигации, удаляя активный класс
+		menuBody.classList.remove('active')
+		body.classList.remove('lock')
+		headsearch.classList.remove('active')
+	}
+})
+
+
+// Плавная прокрутка
+const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+
+smotScrollElems.forEach(link => {
+	link.addEventListener('click', (event) => {
+		event.preventDefault()
+		console.log(event);
+
+		const id = link.getAttribute('href').substring(1)
+		console.log('id : ', id);
+
+		document.getElementById(id).scrollIntoView({
+			behavior: 'smooth'
+		});
+	})
+});
 
 
 //BodyLock для Popup на JS
