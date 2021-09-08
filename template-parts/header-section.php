@@ -15,13 +15,13 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="contacts.html" class="main-nav__link">
-              Контакты
+            <a href="<?php echo get_permalink(10);?>" class="main-nav__link">
+              Контакты  
             </a>
           </li>
         </ul>
-        <a href="tel:88001002255" class="page-header__tel">8 800 100 22 55</a>
-        <a href="tel:88001002255" class="mob-callback__phone"></a>
+        <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="page-header__tel"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a>
+        <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a>
         <a href="#callback" class="btn btn--main2-outline _popup-link">Заказать звонок</a>
         <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
       </nav>
@@ -33,6 +33,6 @@
   <ul class="mob-menu__list">
     <li><a href="numbers.html" class="menu__link">Главная</a></li>
     <li><a href="#services" class="menu__link">Услуги</a></li>
-    <li><a href="contacts.html" class="menu__link">Контакты</a></li>
+    <li><a href="<?php echo get_permalink(10);?>" class="menu__link">Контакты</a></li>
   </ul>
 </nav>
