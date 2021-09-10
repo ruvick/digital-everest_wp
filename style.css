@@ -4375,9 +4375,34 @@ list-style: none;
     display: none;
 }
 
+.banner-sec {
+  position: relative;
+  padding: 200px 0 306px 0;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-image: url('img/proektnoe.jpg');
+}
 
+.nuar_blk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: #00000035;
+}
 
+.banner-sec h1 {
+  color: #fff;
+  margin: 0 0 36px 0;
+}
 
+.banner-sec p  {
+  color: #fff;
+  margin: 0;
+}
 
 @media (max-width: 1199px) {
   .page-header {
