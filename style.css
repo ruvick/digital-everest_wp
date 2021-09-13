@@ -2951,6 +2951,12 @@ input:checked~.field-toggler__name-text:after {
     margin: auto
 }
 
+.work .work-card__icon img {
+    margin: auto;
+    width: 70px;
+    height: 70px;
+}
+
 .work .work-card__title {
     color: #111;
     font-weight: 500
@@ -2999,6 +3005,10 @@ input:checked~.field-toggler__name-text:after {
 .cards-list .card {
     border: 1px solid #E6E6E6;
     margin-bottom: -1px
+}
+
+.page-footer__copyright a {
+    color: white;
 }
 
 .card {
