@@ -18,7 +18,25 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       // Field::make( 'image', 'as_logo_white', 'Логотип в подвале')
       //   ->set_width(30),
       Field::make('text', 'about_home_title', 'Заголовок на главной'),
-      Field::make('rich_text', 'about_home', 'О нашей компании')
+      Field::make('rich_text', 'about_home', 'О нашей компании'),
+
+      Field::make('complex', 'complex_main_slider', 'Слайдер на главной')
+      ->add_fields(array(
+        Field::make('text', 'ms_head', 'Заголовок')   
+        ->set_width(30),
+        Field::make('text', 'ms_sub_head', 'Подзаголовок')   
+        ->set_width(30),
+        Field::make('text', 'ms_main_text', 'Текст')   
+        ->set_width(30),
+      )),
+
+      Field::make('complex', 'complex_faq', 'Часто задаваемые вопросы')
+      ->add_fields(array(
+        Field::make('text', 'faq_q', 'Вопрос')   
+        ->set_width(30),
+        Field::make('rich_text', 'faq_o', 'Ответ')
+        ->set_width(100),
+        ))
     ))
     ->add_tab('Акции', array(
       Field::make('complex', 'complex_promo', 'Верхние блоки на главной')

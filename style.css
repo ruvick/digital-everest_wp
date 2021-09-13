@@ -930,14 +930,17 @@ pre {
     margin-right: 20px;
 }
 
+.main-nav__list .menu-item,
 .main-nav__item {
     position: relative
 }
 
+.main-nav__list .current-menu-item > a,
 .main-nav__item--active>.main-nav__link {
     color: #fff
 }
 
+.main-nav__list .menu-item a,
 .main-nav__link {
     display: block;
     padding: .5em;
@@ -946,6 +949,7 @@ pre {
     font-size: 16px
 }
 
+.main-nav__list .current-menu-item > a:focus,.main-nav__list .current-menu-item > a:hover,
 .main-nav__link:focus,.main-nav__link:hover {
     text-decoration: none
 }
@@ -1986,6 +1990,7 @@ input:checked~.field-toggler__name-text:after {
     border-bottom: 1px solid #fff
 }
 
+.mob-menu__list li a,
 .menu__link {
     display: block;
     white-space: nowrap;
