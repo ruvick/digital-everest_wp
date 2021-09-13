@@ -10,26 +10,9 @@ get_header(); ?>
 <?php get_template_part('template-parts/header-section');?>
 
 <main role="main">
-	<section class="banner-sec">
-		<div class="nuar_blk"></div>
-		<div class="container">
-			<h1>
-				Внедрение <br>
-				Bitrix 24
-			</h1>
-			<p>
-				Bitrix 24 -  это лидер на отечественном рынке CRM систем. Мы поможем спланировать и реализовать на практике <br>
-				работу Bitrix 24 в Вашей компании. Мы повысим эффективность Вашего бизнеса.
-			</p>
-		</div>
-	</section>
+	<?php get_template_part('template-parts/usl-banner');?>
+    <?php get_template_part('template-parts/brodecramp');?>
 
-	<ul class="breadcrumbs">
-		<div class="container">
-			<li class="breadcrumbs__item"><a href class="breadcrumbs__link">Главная</a></li>
-			<li class="breadcrumbs__item"><a href class="breadcrumbs__link">Внедрение</a></li>
-		</div>
-	</ul>
 	<section class="first-bt-block">
 		<div class="container">
 			<div class="title-page"><h1 class="title-page__h1">Проектное внедрение</h1></div>
@@ -263,6 +246,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
+
+	<?php get_template_part('template-parts/all-usl');?>
+	<?php get_template_part('template-parts/feedback-section');?>
 </main>
 
 <?php get_footer(); 
