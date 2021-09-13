@@ -3596,6 +3596,32 @@ input:checked~.field-toggler__name-text:after {
     border-color: rgba(255,255,255,.6)
 }
 
+.obp_preim__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.obp_pr_elem {
+    width: 47%;
+    margin-bottom: 20px;
+    background-color: #FAFAFA;
+    border: 1px solid #E6E6E6;
+    display: flex;
+    padding: 10px;
+}
+
+.obp_pr_elem img,
+.obp_pr_elem span{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.obp_pr_elem img{ 
+    margin-right: 20px;
+}
+
 @media (min-width: 480px) {
     .container {
         width:100%
@@ -4464,6 +4490,11 @@ list-style: none;
   .popup__form-btn {
     padding: 10px 20px;
     font-size: 14px;}
+
+    .obp_pr_elem { 
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 540px) {
