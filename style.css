@@ -3768,6 +3768,10 @@ input:checked~.field-toggler__name-text:after {
         min-height: 400px
     }
 
+    .why_need__card_mini {
+        min-height: 350px
+    }
+
     .imp-stages-card__body-l,.imp-stages-card__body-r,.imp-stages-card__bottom-l,.imp-stages-card__bottom-r {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
