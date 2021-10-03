@@ -26,13 +26,20 @@ get_header(); ?>
 							<span>Адрес:</span>
 							<? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><h5><? echo $adr; ?></h5><?}?>
 						</div>
-						<div class="part">
-							<span>Телефон:</span>
-							<? $tel2 = carbon_get_theme_option("as_phone_2"); if (!empty($tel2)){?><h5><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></a></h5><?}?> 
-						</div>
+
 						<div class="part">
 							<span>Email:</span>
-							<? $mail = carbon_get_theme_option("as_email"); if (!empty($mail)){?>><h5><a href="mailto:<? echo $mail; ?>"><? echo $mail; ?></a></h5><?}?>
+							<? $mail = carbon_get_theme_option("as_email"); if (!empty($mail)){?><h5><a href="mailto:<? echo $mail; ?>"><? echo $mail; ?></a></h5><?}?>
+						</div>
+
+						<div class="part">
+							<span>Коммерческий отдел:</span>
+							<? $tel2 = "+7 (4712) 22-06-69"; if (!empty($tel2)){?><h5><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></a></h5><?}?> 
+						</div>
+
+						<div class="part">
+							<span>Отдел по автоматизации БП:</span>
+							<? $tel2 = "+7 (4712) 55-10-01"; if (!empty($tel2)){?><h5><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></a></h5><?}?> 
 						</div>
 					</div>
 				</div>

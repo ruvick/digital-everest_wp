@@ -23,7 +23,7 @@
 									</div>
 									
 									<div class="card__body">
-										<div class="card__title">Автоматизация <br> Бизнеса</div>
+										<div class="card__title">Автоматизация <br> Бизнес-процессов</div>
 										<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="<?php echo get_template_directory_uri();?>/img/sprite-svg.svg#more-icon"/></svg></div>
 									</div>
 								</a>
@@ -34,7 +34,7 @@
 									</div>
 									
 									<div class="card__body">
-										<div class="card__title">On-Line <br> Маркетинг</div>
+										<div class="card__title">Интернет <br> Маркетинг</div>
 										<div class="card__more"><svg class="card__more-icon" width="38" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="<?php echo get_template_directory_uri();?>/img/sprite-svg.svg#more-icon"/></svg></div>
 									</div>
 								</a>

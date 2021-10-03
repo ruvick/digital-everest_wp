@@ -2,7 +2,7 @@
   <div class="container">
     <div class="page-header__inner">
       <nav id="main-nav" class="main-nav" role="navigation">
-        <a href="http://digital-everest.ruvick.site" class="logo"><img src="<?php echo get_template_directory_uri();?>/img/logo-light.svg" alt></a>
+        <a href="<? bloginfo("url")?>" class="logo"><img src="<?php echo get_template_directory_uri();?>/img/logo-light.svg" alt></a>
         
         <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'main-nav__list',
 						'container' => false )); ?> 

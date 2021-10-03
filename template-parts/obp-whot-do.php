@@ -1,31 +1,32 @@
 <section class="why_need">
 		<div class="container">
-			<h3>Что мы делаем?</h3>
+			<h3>Ваши затраты растут, а доля прибыли снижается?</h3>
+			<h4>Поможем провести:</h4>
 			<div class="why_need__inner">
 				<div class="why_need__cool">
 					<div class="why_need__card why_need__card_mini">
 						<img src="<?php echo get_template_directory_uri();?>/img/obp-pie-chart.svg" alt>
-						<h4>АВТОМАТИЗИРУЕМ ЛЮБЫЕ БИЗНЕС-ПРОЦЕССЫ</h4>
+						<h4>ОПТИМИЗАЦИЮ ВАШЕГО БИЗНЕСА</h4>
 						<p>
-							Разработаем решение для удобства и оптимизации работы Вашего бизнеса и сотрудников
-						</p>
-					</div>
-				</div>
-				<div class="why_need__cool">
-					<div class="why_need__card why_need__card_mini">
-						<img src="<?php echo get_template_directory_uri();?>/img/obp-diagram.svg" alt>
-						<h4>ПОВЫШАЕМ ЭФФЕКТИВНОСТЬ БИЗНЕСА</h4>
-						<p>
-							Поможем зарабатывать больше при использовании меньших ресурсов
+							Проведем глубокий анализ текущего Бизнес-процесса «как есть» или «as is», в результате которого определим и устраним неэффективные процессы, купируем угрозы, усилим выявленные точки роста, а также предложим развитие возможностей Вашей компании. <strong>Ваш бизнес начнет работать «как должен», а не «как есть»!</strong>
 						</p>
 					</div>
 				</div>
 				<div class="why_need__cool">
 					<div class="why_need__card why_need__card_mini">
 						<img src="<?php echo get_template_directory_uri();?>/img/obp-stock-market.svg" alt>
-						<h4>РАЗРАБАТЫВАЕМ СЛОЖНЫЕ ИТ РЕШЕНИЯ</h4>
+						<h4>РАЗРАБОТАТЬ И ВНЕДРИТЬ ОПТИМАЛЬНОЕ АЙ-ТИ РЕШЕНИЕ</h4>
 						<p>
-							Реализуем IT-проект любой сложности и интегрируем его с внутренними системами компании
+							Разработаем и внедрим IT – ПРОЕКТ, направленный на усиление <strong>драйверов роста</strong> (business drivers), устранение <strong>дублирующих функций и рутинных процессов</strong>, а также на <strong>повышение цифровой безопасности и управление бизнесом</strong>.
+						</p>
+					</div>
+				</div>
+				<div class="why_need__cool">
+					<div class="why_need__card why_need__card_mini">
+						<img src="<?php echo get_template_directory_uri();?>/img/obp-diagram.svg" alt>
+						<h4>ПОДГОТОВКУ ВАШЕГО БИЗНЕСА К МАСШТАБИРОВАНИЮ И РОСТУ</h4>
+						<p>
+						В результате автоматизации описанных и оптимизированных бизнес-процессов, Ваш Бизнес готов к росту и масштабированию. <strong>Доля прибыли растет, а затраты снижаются!</strong>
 						</p>
 					</div>
 				</div>

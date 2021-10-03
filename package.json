@@ -8,7 +8,7 @@
     "clear_r": "ssh u1477004@37.140.192.43 \"rm www/digital-everest.ru/wp-content/themes/digital-everest/*.*\"",
     "send_r": "scp -C *.php *.png *.css u1477004@37.140.192.43:www/digital-everest.ru/wp-content/themes/digital-everest/",
     "send_ms": "scp -C *.css u1477004@37.140.192.43:www/digital-everest.ru/wp-content/themes/digital-everest/",
-    "send_one": "scp -C page-proektnoe.php u1477004@37.140.192.43:www/digital-everest.ru/wp-content/themes/digital-everest/",
+    "send_one": "scp -C page-optimization.php u1477004@37.140.192.43:www/digital-everest.ru/wp-content/themes/digital-everest/",
     "send_one1": "scp -C themes-fields.php u1477004@37.140.192.43:www/digital-everest.ru/wp-content/themes/digital-everest/",
     "send_one2": "scp -C page-optimization.php u1477004@37.140.192.43:www/digital-everest.ru/wp-content/themes/digital-everest/",
     "send_one3": "scp -C page-marketing.php u1477004@37.140.192.43:www/digital-everest.ru/wp-content/themes/digital-everest/",

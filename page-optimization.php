@@ -26,27 +26,29 @@ get_header(); ?>
 			<div class="imp-stages-card">
 				<div class="imp-stages-card-num">Этап <span>1.</span></div>
 				<div class="imp-stages-card__head">
-					<div class="imp-stages-card__title">Консультация</div>
+					<div class="imp-stages-card__title">ПОДГОТОВКА К АВТОМАТИЗАЦИИ</div>
 					<p>Общая оценка ситуации и задач бизнеса.</p>
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
-						<div class="imp-stages-card__body-l">
-							<h5>Результат</h5>
-							<ul>
-								<li>Общая оценка ситуации в бизнесе;</li>
-								<li>Определение основных задачь автоматизации.</li>
-							</ul>
-						</div>
 						<div class="imp-stages-card__body-r">
 							<h5>Перечень работ</h5>
 							<ul>
-								<li>Определение стратегических задач бизнеса;</li>
-								<li>Изучение текущих методов работы и процессов компании;</li>
-								<li>Разработка и согласование концепции автоматизации по блокам задач;</li>
-								<li>Оценка порядка сроков и стоимости по каждому блоку.</li>
+								<li>Создание Рабочей группы ответственных лиц по автоматизации;</li>
+								<li>Анализ Рабочей группой существующего БП и его подробное описание;</li>
+								<li>Формирование списка проблем и их ранжирование;</li>
+								<li>Определение задач на основе выявленных проблем;</li>
+								<li>Оценка сроков и стоимости по реализации проекта.</li>
 							</ul>
 						</div>
+
+						<div class="imp-stages-card__body-l">
+							<h5>Результат</h5>
+							<ul>
+								<li>Четкое и понятное Техническое задание по автоматизации с конкретными сроками и стоимостью.;</li>
+							</ul>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -54,26 +56,27 @@ get_header(); ?>
 			<div class="imp-stages-card">
 				<div class="imp-stages-card-num">Этап <span>2.</span></div>
 				<div class="imp-stages-card__head">
-					<div class="imp-stages-card__title">Концепция автоматизации</div>
+					<div class="imp-stages-card__title">АВТОМАТИЗАЦИЯ</div>
 					<p>Составление методики и подбор инструментария.</p>
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
-						<div class="imp-stages-card__body-l">
-							<h5>Результат</h5>
-							<ul>
-								<li>Методика автоматизации Вашего бизнеса;</li>
-								<li>ПОдобранное программное обеспечение.</li>
-							</ul>
-						</div>
 						<div class="imp-stages-card__body-r">
 							<h5>Перечень работ</h5>
 							<ul>
-								<li>Разработка подробной методики и плана автоматизации;</li>
-								<li>Описание бизнес-процессов и требований к автоматизации;</li>
-								<li>Определение программного обеспечения для разработки.</li>
+								<li>Разработка алгоритма решения поставленных задач;</li>
+								<li>Подбор оптимальных инструментов автоматизации (CRM система, ERP система, Интернет-маркетинг, и.т.д.);</li>
+								<li>Внедрение инструментов автоматизации.</li>
 							</ul>
 						</div>
+
+						<div class="imp-stages-card__body-l">
+							<h5>Результат</h5>
+							<ul>
+								<li>Четко работающая информационная система, в результате которой у Вас – устранены выявленные проблемы, решены поставленные задачи автоматизации и повышена цифровая безопасность и управление бизнесом.</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -81,27 +84,26 @@ get_header(); ?>
 			<div class="imp-stages-card">
 				<div class="imp-stages-card-num">Этап <span>3.</span></div>
 				<div class="imp-stages-card__head">
-					<div class="imp-stages-card__title">Разработка ИТ систем</div>
+					<div class="imp-stages-card__title">РАЗРАБОТКА СИСТЕМА ВНУТРЕННЕГО КОНТРОЛЯ</div>
 					<p>Адаптация и разработка программного обеспечения.</p>
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
-						<div class="imp-stages-card__body-l">
-							<h5>Результат</h5>
-							<ul>
-								<li>Готовый программно аппаратный комплекс для автоматизации Вашего бизнеса.</li>
-							</ul>
-						</div>
 						<div class="imp-stages-card__body-r">
 							<h5>Перечень работ</h5>
 							<ul>
-								<li>Выбор методологии разработки;</li>
-								<li>Разработка программного продукта;</li>
-								<li>Установка системы на пилотных пользователях;</li>
-								<li>Демонстрация работающего продукта ключевым сотрудникам;</li>
-								<li>Подготовка обучающих материалов по работе с системой;</li>
+								<li>Определение числовых показателей, которые будут отражают эффективность проведенной автоматизации;</li>
+								
 							</ul>
 						</div>
+
+						<div class="imp-stages-card__body-l">
+							<h5>Результат</h5>
+							<ul>
+								<li>Наличие показателей, характеризующие эффективность и (или) результативность проведенной автоматизации. Система контроля дает возможность постоянной коррекции работающей системы автоматизации Вашего бизнеса и ее совершенствования.</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -109,33 +111,63 @@ get_header(); ?>
 			<div class="imp-stages-card">
 				<div class="imp-stages-card-num">Этап <span>4.</span></div>
 				<div class="imp-stages-card__head">
-					<div class="imp-stages-card__title">Сопровождение и обучение</div>
+					<div class="imp-stages-card__title">СОПРОВОЖДЕНИЕ И ОБУЧЕНИЕ</div>
 					<p>Обучение сторудников и корректировка работы ПО.</p>
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
-						<div class="imp-stages-card__body-l">
-							<h5>Результат</h5>
-							<ul>
-								<li>Персонал обученный пользоваться новой информационной системой;</li>
-								<li>Отлаженный программный продукт;</li>
-							</ul>
-						</div>
 						<div class="imp-stages-card__body-r">
 							<h5>Перечень работ</h5>
 							<ul>
-								<li>Гарантийное обслуживание программного продукта;</li>
-								<li>Постгарантийное обслуживание разработанного ПО;</li>
+								<li>Демонстрация работающей информационной системы ключевым сотрудникам;</li>
+								<li>Подготовка обучающих материалов по работе с информационной системой;</li>
 								<li>Составление методических материалов для персонала;</li>
-								<li>Ответы на возникающие вопросы по выбранным срдствам выбранныз каналов связи.</li>
+								<li>Обучающее видео по работе именно с Вашей информационной системой непосредственно по каждому отделу;</li>
+								<li>Техническая поддержка.</li>
 							</ul>
 						</div>
+
+						<div class="imp-stages-card__body-l">
+							<h5>Результат</h5>
+							<ul>
+								<li>У всех сотрудников имеются необходимые и достаточные навыки работы с информационной системой, что формирует доверие к проекту автоматизации и высвобождает часть полезного времени для выполнение своих обязанностей, по существу.</li>
+							</ul>
+						</div>
+						
 					</div>
 				</div>
 			</div>
 
 
 		</div>	
+	</section>
+	
+	<section class="why_need">
+		<div class="container">
+			<h3>Команда нашего проекта по автоматизации</h3>
+
+			<div class="comandCircles">
+				<div class="circleElement">
+					<img src = "<?php echo get_template_directory_uri();?>/img/icons/comand-mng.svg" />	
+					<h4>МЕНЕДЖЕР <br/>ПРОЕКТА</h4>
+				</div>
+				
+				<div class="circleElement">
+					<img src = "<?php echo get_template_directory_uri();?>/img/icons/comand-ban.svg" />	
+					<h4>БИЗНЕС<br/>АНАЛИТИК</h4>
+				</div>
+				
+				<div class="circleElement">
+					<img src = "<?php echo get_template_directory_uri();?>/img/icons/comand-aut.svg" />	
+					<h4>СПЕЦИАЛИСТ ПО <br/>АВТОМАТИЗАЦИИ</h4>
+				</div>
+				
+				<div class="circleElement">
+					<img src = "<?php echo get_template_directory_uri();?>/img/icons/comand-sap.svg" />	
+					<h4>SUPPORT<br/>СПЕЦИАЛИСТ</h4>
+				</div>
+			</div>
+		</div>
 	</section>
 	
 	<?php get_template_part('template-parts/all-usl');?>
