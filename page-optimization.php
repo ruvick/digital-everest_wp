@@ -27,7 +27,6 @@ get_header(); ?>
 				<div class="imp-stages-card-num">Этап <span>1.</span></div>
 				<div class="imp-stages-card__head">
 					<div class="imp-stages-card__title">ПОДГОТОВКА К АВТОМАТИЗАЦИИ</div>
-					<p>Общая оценка ситуации и задач бизнеса.</p>
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
@@ -57,7 +56,7 @@ get_header(); ?>
 				<div class="imp-stages-card-num">Этап <span>2.</span></div>
 				<div class="imp-stages-card__head">
 					<div class="imp-stages-card__title">АВТОМАТИЗАЦИЯ</div>
-					<p>Составление методики и подбор инструментария.</p>
+					
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
@@ -85,7 +84,7 @@ get_header(); ?>
 				<div class="imp-stages-card-num">Этап <span>3.</span></div>
 				<div class="imp-stages-card__head">
 					<div class="imp-stages-card__title">РАЗРАБОТКА СИСТЕМА ВНУТРЕННЕГО КОНТРОЛЯ</div>
-					<p>Адаптация и разработка программного обеспечения.</p>
+					
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
@@ -112,7 +111,7 @@ get_header(); ?>
 				<div class="imp-stages-card-num">Этап <span>4.</span></div>
 				<div class="imp-stages-card__head">
 					<div class="imp-stages-card__title">СОПРОВОЖДЕНИЕ И ОБУЧЕНИЕ</div>
-					<p>Обучение сторудников и корректировка работы ПО.</p>
+					<!-- <p>Обучение сторудников и корректировка работы ПО.</p> -->
 				</div>
 				<div class="imp-stages-card__body">
 					<div class="imp-stages-card__body-row">
