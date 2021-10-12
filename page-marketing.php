@@ -17,7 +17,7 @@ get_header(); ?>
 
     <section class="first-bt-block">
 		<div class="container">
-			<div class="title-page"><h2 class="title-page__h1">On-line маркетинг от Didgitel-Everest</h2></div>
+			<div class="title-page"><h2 class="title-page__h1">Интернет маркетинг от Didgitel-Everest</h2></div>
 			<? the_content();?>
 		</div>
 	</section>
