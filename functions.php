@@ -10,6 +10,8 @@ include "carbon-fields/carbon-fields-plugin.php";
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
+require_once 'htmlsitemap.php';
+
 add_action('carbon_fields_register_fields', 'crb_attach_theme_options');
 function crb_attach_theme_options()
 {
@@ -35,6 +37,7 @@ add_action('after_setup_theme', function () {
 	register_nav_menus([
 		// 'menu_hot' => 'Меню актуальных предложений (рядом с каталогом)',
 		'menu_main' => 'Меню основное',
+		'menu_footer' => 'Меню в подвале',
 		'menu_cat' => 'Меню каталог (в подвале)',
 		'menu_company' => 'Меню о компании (в подвале)',
 		// 'menu_corp' => 'Общекорпоративное меню (верхняя шапка)', 

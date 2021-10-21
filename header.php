@@ -6,8 +6,6 @@
 
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <meta name="description" content="Новый сайт">
-
   <meta name="yandex-verification" content="96cc21ba5e2d2303" />
 
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/falt/icon256.png" sizes="256x256">

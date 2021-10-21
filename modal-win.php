@@ -6,15 +6,15 @@
 		<div class="popup__body">
 			<div class="popup__close"></div>
 			<div class="popup__item d-flex">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/popup-img.jpg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/popup-img.jpg" alt="Заявка на обратный звонок">
 				<div class="popup__form-block">
-					<h2>Заявка на обратный звонок</h2>
+					<div class="h2">Заявка на обратный звонок</div>
 					<div class="SendetMsg" style="display:none;">
 						Ваше сообщение успешно отправлено.
 					</div>
 					<div class="headen_form_blk">
 						<p>Оставьте заявку и мы свяжемся с вами в течении 15 минут</p>
-						<form action="#" class="popup__form">
+						<form class="popup__form">
 							<input type="text" name="name" placeholder="Имя" id="form-callback-name" class="popup__form-input input">
 							<input type="tel" name="tel" placeholder="Телефон*" id="form-callback-tel" class="popup__form-input input">
 							<input type="text" name="email" placeholder="Email" id="form-callback-email" class="popup__form-input input">
@@ -45,12 +45,12 @@
 <div style="display: none;">
 	<div class="box-modal box-modal-new box-modal-new__cust" id="question">
 		<div class="box-modal_close box-modal_close_new arcticmodal-close">X</div>
-		<img src="<?php bloginfo("template_url") ?>/img/similar-01.jpg" loading="lazy" />
+		<img src="<?php bloginfo("template_url") ?>/img/similar-01.jpg" loading="lazy" alt="Заказать звонок"/>
 		<div class="formArctikBlk mod-zagr-tur">
-			<h2>Заказать звонок <span class='tkName'></span></h2>
+			<div class="h2">Заказать звонок <span class='tkName'></span></div>
 			<p>Наши специалисты свяжутся с Вами в течение 15 минут</p>
 
-			<form action="#" class="form-question">
+			<form class="form-question">
 				<div class="SendetMsg" style="display:none">
 					Ваше сообщение успешно отправлено.
 				</div>

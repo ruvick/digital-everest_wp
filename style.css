@@ -716,40 +716,40 @@ body {
     font-size: 16px
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     font-family: "TT Norms",Arial,sans-serif;
     font-weight: 700;
     line-height: 1.375em;
     color: currentColor
 }
 
-h1,h2,h3 {
+h1,h2,h3,.h1,.h2,.h3 {
     margin-top: 1.375em;
     margin-bottom: .6875em
 }
 
-h4,h5,h6 {
+h4,h5,h6,.h4,.h5,.h6 {
     margin-top: .6875em;
     margin-bottom: .6875em
 }
 
-h1 {
+h1,.h1 {
     font-size: 2.25em
 }
 
-h2 {
+h2,.h2 {
     font-size: 1.875em
 }
 
-h3 {
+h3,.h3 {
     font-size: 1.5em
 }
 
-h4 {
+h4,.h4 {
     font-size: 1.25em
 }
 
-h5,h6 {
+h5,h6,.h5,.h6 {
     font-size: 1em
 }
 
@@ -878,6 +878,8 @@ pre {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -885,6 +887,19 @@ pre {
     padding: 20px 0
 }
 
+.page-footer__top .footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 20px;
+}
+.page-footer__top .footer-nav__list .menu-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
 .page-footer__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -906,7 +921,6 @@ pre {
 .page-footer__links-group a:first-child {
     margin-right: 25px
 }
-
 .main-nav {
     position: relative;
     display: -webkit-box;
@@ -939,7 +953,6 @@ pre {
 .main-nav__item--active>.main-nav__link {
     color: #fff
 }
-
 .main-nav__list .menu-item a,
 .main-nav__link {
     display: block;
@@ -3183,7 +3196,7 @@ input:checked~.field-toggler__name-text:after {
     width: 100%
 }
 
-.why_need h3 {
+.why_need h3, .why_need .h3 {
     margin-top: 60px;
     margin-bottom: 60px
 }
@@ -3225,7 +3238,7 @@ input:checked~.field-toggler__name-text:after {
     margin: auto
 }
 
-.why_need__card h4 {
+.why_need__card h4, .why_need__card .h4 {
     font-size: 18px
 }
 
@@ -3240,7 +3253,7 @@ input:checked~.field-toggler__name-text:after {
     text-transform: uppercase
 }
 
-.imp-stages__head h3 {
+.imp-stages__head h3, .imp-stages__head .h3 {
     margin: 0;
     display: inline-block;
     border: 8px solid #fff;
@@ -3259,6 +3272,7 @@ input:checked~.field-toggler__name-text:after {
 .imp-stages-card:first-child {
     margin-top: -55px
 }
+
 
 .imp-stages-card-num {
     color: #fff;
@@ -3332,7 +3346,7 @@ input:checked~.field-toggler__name-text:after {
     font-size: 16px
 }
 
-.imp-stages-card__body-l h5,.imp-stages-card__body-l p,.imp-stages-card__body-l ul,.imp-stages-card__body-r h5,.imp-stages-card__body-r p,.imp-stages-card__body-r ul {
+.imp-stages-card__body-l h5,.imp-stages-card__body-l .h5,.imp-stages-card__body-l p,.imp-stages-card__body-l ul,.imp-stages-card__body-r h5,.imp-stages-card__body-r .h5,.imp-stages-card__body-r p,.imp-stages-card__body-r ul {
     margin: 0 0 5px;
     line-height: 1.4
 }
@@ -3379,7 +3393,7 @@ input:checked~.field-toggler__name-text:after {
     padding: 25px 40px!important
 }
 
-.imp-stages-card__bottom-l h4,.imp-stages-card__bottom-r h4 {
+.imp-stages-card__bottom-l h4,.imp-stages-card__bottom-r h4,.imp-stages-card__bottom-l .h4,.imp-stages-card__bottom-r .h4 {
     margin: 0;
     font-size: 16px;
     font-weight: 500
@@ -3472,7 +3486,7 @@ input:checked~.field-toggler__name-text:after {
     margin-bottom: 30px
 }
 
-.contacts__main h1 {
+.contacts__main h1,.contacts__main .h1 {
     font-size: 32px;
     line-height: 1.2;
     margin-top: 0;
@@ -3487,16 +3501,16 @@ input:checked~.field-toggler__name-text:after {
     font-size: 14px
 }
 
-.contacts__main .part h5 {
+.contacts__main .part h5, .contacts__main .part .h5 {
     margin: 0
 }
 
-.contacts__main .part h5 a {
+.contacts__main .part h5 a, .contacts__main .part .h5 a {
     text-decoration: none;
     color: #000
 }
 
-.contacts__main .part h5 a:hover {
+.contacts__main .part h5 a:hover, .contacts__main .part .h5 a:hover {
     color: #A95094
 }
 
@@ -3512,7 +3526,8 @@ input:checked~.field-toggler__name-text:after {
 }
 
 .accordion-group__accordion-heading {
-    margin: 0
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .accordion-group__accordion-btn {
@@ -3651,10 +3666,52 @@ input:checked~.field-toggler__name-text:after {
     margin: auto;
 }
 
-.circleElement h4{
+.circleElement h4,.circleElement .h4{
     margin: auto;
     font-size: 0.7em;
     text-align: center;
+}
+/* 404 */
+.error-not-found-сontainer {
+    padding: 40px 0;
+    text-align: center;
+}
+.error-not-found__inner {
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+}
+.error-not-found__inner a{
+    color: #000;
+}
+
+/* Отзывы */
+.otzyvy-container {
+    max-width: 600px;
+    padding: 40px 0;
+}
+/* Карта сайта */
+.htmlsitemap-container h1 {
+    color: #000;
+}
+.htmlsitemap {
+    padding: 40px 0;
+}
+.htmlsitemap li {
+    list-style-position: inside;
+    list-style-type: disc;
+    line-height: 1.4;
+    margin: 0 0 0 2%;
+}
+.htmlsitemap .h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #000;
+}
+.htmlsitemap a {
+    color: #000;
+    text-decoration: unset;
 }
 
 @media (min-width: 480px) {
@@ -3994,7 +4051,7 @@ input:checked~.field-toggler__name-text:after {
         margin-bottom: 0
     }
 
-    .contacts__main h1 {
+    .contacts__main h1, .contacts__main .h1 {
         margin-top: 1.375em;
         margin-bottom: .6875em
     }
@@ -4139,12 +4196,12 @@ input:checked~.field-toggler__name-text:after {
         max-width: 100%!important
     }
 
-    h2,h3,p {
+    h2,h3,p,.h2,.h3 {
         orphans: 3;
         widows: 3
     }
 
-    h2,h3 {
+    h2,h3,.h2,.h3 {
         page-break-after: avoid
     }
 
@@ -4391,7 +4448,7 @@ list-style: none;
     padding: 35px;
 }
 
-.popup__form-block h2 {
+.popup__form-block h2, .popup__form-block .h2 {
     line-height: 1;
     margin: 0 0 20px 0;
 }
@@ -4486,7 +4543,7 @@ list-style: none;
   background-color: #00000065;
 }
 
-.banner-sec h1 {
+.banner-sec h1,.banner-sec .h1 {
   color: #fff;
   margin: 0 0 36px 0;
 }
@@ -4531,7 +4588,7 @@ list-style: none;
   .popup__form-block {
     width: 100%;
     padding: 45px 15px 30px 15px;}
-  .popup__form-block h2 {
+  .popup__form-block h2, .popup__form-block .h2  {
     line-height: 1;}
   .popup__form-block p {
     font-size: 14px;
@@ -4593,7 +4650,7 @@ list-style: none;
 }
 
 @media (max-width: 460px) {
-  .page-header__tel {
+  .main-nav .page-header__tel {
     display: none;
   }
   .mob-callback__phone {

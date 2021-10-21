@@ -5,7 +5,7 @@
 <main role="main">
 	<div class="intro">
 		<div class="container">
-			<img src="<?php echo get_template_directory_uri();?>/img/man.png" alt class="intro-image">
+			<img src="<?php echo get_template_directory_uri();?>/img/man.png" alt="Получить консультацию" class="intro-image">
 
 			<div class="slider-intro-caption">
 				<? 
@@ -15,7 +15,7 @@
 						foreach ($slide as $item) {
 				?>
 				<div class="intro-caption">
-					<h1 class="intro-title"><? echo $item['ms_head']; ?></h1>
+					<div class="intro-title"><? echo $item['ms_head']; ?></div>
 					<p class="intro-lead-text"><? echo $item['ms_sub_head']; ?></p>
 					<p class="intro-text"><? echo $item['ms_main_text']; ?></p>
 					<a href="#callback" class="btn btn--dark intro-btn _popup-link">Получить консультацию</a>
